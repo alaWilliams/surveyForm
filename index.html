@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">freeCodeCamp SurveyForm</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name <input placeholder="Enter your name" id="name" type="text" required></label>
+        <label id="email-label">Email <input placeholder="Enter your Email" id="email" type="email" required></label>
+        <label id="number-label">Age <span>(optional)</span> <input id="number" placeholder="Age" id="age" type="number" min="10" max="99" ></label>
+        <label>Which option best describes your current role?: <select id="dropdown"></label>
+        <option>Select an option</option>
+        <option>Student</option>
+        <option>Full Time Job</option>
+        <option>Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>Other</option>
+        </select>
+        <label>Would you recommend freeCodeCamp to a friend? <input type=radio name="recommendation" value="definitely">Definitely</input>
+        <input type=radio name="recommendation" value="maybe">Maybe</input>
+        <input type=radio name="recommendation" value="not-sure">Not sure</input> </label>
+        <label>What is your favorite feature of freeCodeCamp? <select id="dropdown"></label>
+        <option>Select an option</option>
+        <option>Challenges</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Open Source</option>
+        </select>
+        <label>What would you like to see improved? <span>(Check all that apply)</span>
+        <input type="checkbox" value="Front-end Projects">Front-end Projects</input>
+        <input type="checkbox" value="Back-end Projects">Back-end Projects</input>
+        <input type="checkbox" value="Data Visualization">Data Visualization</input>
+        <input type="checkbox" value="Challenges">Challenges</input>
+        <input type="checkbox" value="Open Source Community">Open Source Community</input>
+        <input type="checkbox" value="Gitter help rooms">Gitter help rooms</input>
+        <input type="checkbox" value="Videos">Videos</input>
+        <input type="checkbox" value="City Meetups">City Meetups</input>
+        <input type="checkbox" value="Wiki">Wiki</input>
+        <input type="checkbox" value="Forum">Forum</input></label>
+        <input type="checkbox" value="Additional Courses">Additional Courses</input></label>
+        <label>Any comments or suggestions?<textarea placeholder="Enter your comment here..."></textarea></label>
+      <input type="submit" id="submit">Submit</input>
+    </form>
+    </fieldset>
+  </body>
+</html>
